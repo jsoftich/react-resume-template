@@ -13,46 +13,35 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import introImage from '../images/Glacier.jpg';
+import portfolioImage from '../images/WhitefishLake.jpg';
+import profilepic from '../images/JMS.jpg';
+
 import {
   About,
   ContactSection,
   ContactType,
-  Hero,
+  Intro,
   HomepageMeta,
-  PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
+  PortfolioItem,
 } from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'John Softich resume',
+  description: "My React resume",
 };
 
 /**
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
+  Intro: 'intro',
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
@@ -67,20 +56,53 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
-export const heroData: Hero = {
-  imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+export const introData: Intro = {
+  imageSrc: introImage,
+  name: `I'm John Softich.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Montana based <strong className="text-stone-100">Software Engineering leader</strong>, currently working
+        at <strong className="text-stone-100">National Flood Services</strong> leading all aspects of software development of a modern policy and claim systems for NFIP Flood Insurance.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me <strong className="text-stone-100">Fly Fishing</strong>,
+        creating man glitter in my <strong className="text-stone-100">garage</strong>, or travelling with my wife to college football and all the {' '}
+        <strong className="text-stone-100">MLB stadiums</strong>.
+      </p>
+    </>
+  ),
+  actions: [
+    {
+      href: '/assets/JohnSoftichResume.pdf',
+      text: 'Resume',
+      primary: true,
+      Icon: ArrowDownTrayIcon,
+    },
+    {
+      href: `#${SectionId.Contact}`,
+      text: 'Contact',
+      primary: false,
+    },
+  ],
+};
+
+/**
+ * Portfolio section
+ */
+export const portfolioData: PortfolioItem = {
+  imageSrc: portfolioImage,
+  name: `I'm John Softich.`,
+  description: (
+    <>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I'm a Montana based <strong className="text-stone-100">Software Engineering leader</strong>, currently working
+        at <strong className="text-stone-100">National Flood Services</strong> leading all aspects of software development of a modern policy and claim systems for NFIP Flood Insurance.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        In my free time time, you can catch me <strong className="text-stone-100">Fly Fishing</strong>, 
+        creating man glitter in my <strong className="text-stone-100">garage</strong>, or travelling for college football and to all {' '}
+        <strong className="text-stone-100">MLB stadiums</strong>.
       </p>
     </>
   ),
@@ -104,16 +126,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a highly skilled and adaptable professional with a strong technical background in .NET/C#, SQL Server, React/JavaScript, and AWS. Exceptional in agile project and product management methodologies.  I have substantial experience driving successful software development initiatives, leading high-performing engineering teams, delivering cutting-edge solutions, managing product development lifecycle, and aligning technology strategies with business objectives. I have skills in strategic planning, goal setting, process development, budgeting, and creating opportunities for professional development within technology teams. `,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Kalispell, MT', Icon: MapIcon},
+    {label: 'Age', text: '47', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Italian / Scottish / Slavic', Icon: FlagIcon},
+    {label: 'Interests', text: 'Fly Fishing, Woodworking, Banjos', Icon: SparklesIcon},
+    {label: 'College', text: 'Montana State University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'National Flood Services - Peak6', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,213 +142,159 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
       {
         name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'TypeScript',
+        level: 5,
+      },      
+      {
+        name: 'ASP.NET Core Blazor',
+        level: 4,
       },
+      {
+        name: 'GraphQL',
+        level: 5,
+      },
+      {
+        name: 'jQuery',
+        level: 7,
+      },      
     ],
   },
+  {
+    name: 'Database development',
+    skills: [
+      {
+        name: 'SQL Server 2008+',
+        level: 9.5,
+      },
+      {
+        name: 'PostgreSQL',
+        level: 7,
+      },
+      {
+        name: 'MySQL',
+        level: 8,
+      },
+      {
+        name: 'Oracle',
+        level: 6,
+      },     
+      {
+        name: 'DB2 for i',
+        level: 8,
+      },           
+    ],
+  },  
   {
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
+        name: 'C#(.NET/CORE)',
         level: 9,
       },
       {
-        name: 'Flutter',
+        name: 'Java',
+        level: 6.5,
+      },      
+      {
+        name: 'GoLang',
         level: 4,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Node.js',
+        level: 7,
+      },
+      {
+        name: 'Perl',
+        level: 6,
+      },      
+    ],
+  },
+  {
+    name: 'Scripting',
+    skills: [
+      {
+        name: 'PowerShell',
+        level: 8.5,
+      },
+      {
+        name: 'Python',
+        level: 5,
+      },
+      {
+        name: 'Bash',
+        level: 7.5,
+      },
+      {
+        name: 'C shell',
+        level: 5,
+      },      
+      {
+        name: 'PHP',
+        level: 8,
       },
     ],
   },
 ];
 
-/**
- * Portfolio section
- */
-export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
-];
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'May 2000',
+    location: 'Montana State University',
+    title: 'BS Mathematics Minor Computer Science',
+    content: <p></p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'October 2017',
+    location: 'Harvard Business School',
+    title: 'Executive Education - Advanced Management Program, Organization Leadership',
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'August 2011 - Present',
+    location: 'National Flood Services - Peak6',
+    title: 'Director of Software Engineering',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+       Orchestrate end-to-end project management, including software development, rigorous testing, release, and configuration management, across a spectrum of technologies encompassing Microsoft, IBM, and AWS platforms. Develop high-performing development teams by establishing clear expectations, managing objectives, providing coaching, steering career development, and executing targeted recruitment efforts. Function as product owner for all legacy platforms and serve as a pivotal Subject Matter Expert (SME) for the new platform, driving strategic initiatives.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2003 - August 2011',
+    location: 'Merlin Information Services',
+    title: 'Director of IT',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Headed information technology encompassing software development, IT operations/networking, IT security, data processing/warehouse, and helpdesk/sustainment services. Supervised a proficient team of twelve professionals while managing a substantial $3M budget. Led software and system architecture, instilling rigorous development processes and standards across the organization. Delivered a custom site on schedule for the company's largest client without disrupting ongoing operations. Established a new internal data center and managed multiple colocation facility migrations and consolidation efforts.
       </p>
     ),
   },
+  {
+    date: 'October 1999 - September 2003',
+    location: 'Frontline Processing',
+    title: 'IT Manager/Senior Web Developer',
+    content: (
+      <p>
+        I oversaw the Information Technology and Customer Service operations for a $100 million Information Services Company. My responsibilities included managing various aspects such as software development, quality assurance (QA), infrastructure, security, project management, helpdesk, and customer service.
+      </p>
+    ),
+  },  
 ];
 
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
-  ],
-};
 
 /**
  * Contact section
@@ -340,23 +306,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'contact@johnsoftich.com',
+      href: 'mailto:contact@johnsoftich.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Kalispell, MT',
+      href: 'https://www.google.com/maps/place/Kalispell,+MT+59901/@48.2247291,-114.3173031,12.75z/data=!4m6!3m5!1s0x536650959ceac247:0xaf1fbdda1d5abb62!8m2!3d48.1919889!4d-114.316813!16zL20vMHgxdnQ?entry=ttu',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@jsoftich',
+      href: 'https://www.instagram.com/jsoftich/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'jsoftich',
+      href: 'https://github.com/jsoftich',
     },
   ],
 };
@@ -365,9 +331,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/jsoftich'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/1325267/ninghad'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/jsoftich/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/jsoftich/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/johnsoftich'},
 ];

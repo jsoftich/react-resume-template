@@ -1,4 +1,3 @@
-import {StaticImageData} from 'next/image';
 import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
@@ -20,14 +19,14 @@ export interface HomepageMeta {
 /**
  * Hero section
  */
-export interface Hero {
+export interface Intro {
   imageSrc: string;
   name: string;
   description: JSX.Element;
-  actions: HeroActionItem[];
+  actions: IntroActionItem[];
 }
 
-interface HeroActionItem {
+interface IntroActionItem {
   href: string;
   text: string;
   primary?: boolean;
@@ -77,11 +76,19 @@ export interface SkillGroup {
  * Portfolio section
  */
 export interface PortfolioItem {
-  title: string;
-  description: string;
-  url: string;
-  image: string | StaticImageData;
+  imageSrc: string;
+  name: string;
+  description: JSX.Element;
+  actions: PortfolioActionItem[];
 }
+
+interface PortfolioActionItem {
+  href: string;
+  text: string;
+  primary?: boolean;
+  Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
+}
+
 
 /**
  * Resume section
@@ -91,20 +98,6 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
-}
-
-/**
- * Testimonial section
- */
-export interface TestimonialSection {
-  imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
-}
-
-export interface Testimonial {
-  image?: string;
-  name: string;
-  text: string;
 }
 
 /**

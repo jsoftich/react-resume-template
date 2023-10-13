@@ -1,34 +1,54 @@
-import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
+import {ChevronDownIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
+import {FC, memo} from 'react';
 
-import {isMobile} from '../../config';
-import {portfolioItems, SectionId} from '../../data/data';
-import {PortfolioItem} from '../../data/dataDef';
-import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
+import {portfolioData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
+import Socials from '../Socials';
 
 const Portfolio: FC = memo(() => {
+  const {imageSrc, name, description, actions} = portfolioData;
+
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
-      <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
-        <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-          {portfolioItems.map((item, index) => {
-            const {title, image} = item;
-            return (
-              <div className="pb-6" key={`${title}-${index}`}>
-                <div
+    <Section noPadding sectionId={SectionId.Portfolio}>
+      <div className="relative flex h-screen w-full items-center justify-center">
+        <Image
+          alt={`${name}-image`}
+          className="absolute z-0 h-full w-full object-cover"
+          placeholder="blur"
+          priority
+          src={imageSrc}
+        />
+        <div className="z-10  max-w-screen-lg px-4 lg:px-0">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
+            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>
+            {description}
+            <div className="flex gap-x-4 text-neutral-100">
+              <Socials />
+            </div>
+            <div className="flex w-full justify-center gap-x-4">
+              {actions.map(({href, text, primary, Icon}) => (
+                <a
                   className={classNames(
-                    'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                  )}>
-                  <Image alt={title} className="h-full w-full" placeholder="blur" src={image} />
-                  <ItemOverlay item={item} />
-                </div>
-              </div>
-            );
-          })}
+                    'flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                    primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white',
+                  )}
+                  href={href}
+                  key={text}>
+                  {text}
+                  {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-x-0 bottom-6 flex justify-center">
+          <a
+            className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
+            href={`/#${SectionId.Contact}`}>
+            <ChevronDownIcon className="h-5 w-5 bg-transparent sm:h-6 sm:w-6" />
+          </a>
         </div>
       </div>
     </Section>
@@ -37,48 +57,3 @@ const Portfolio: FC = memo(() => {
 
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
-
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
-  const [mobile, setMobile] = useState(false);
-  const [showOverlay, setShowOverlay] = useState(false);
-  const linkRef = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    // Avoid hydration styling errors by setting mobile in useEffect
-    if (isMobile) {
-      setMobile(true);
-    }
-  }, []);
-  useDetectOutsideClick(linkRef, () => setShowOverlay(false));
-
-  const handleItemClick = useCallback(
-    (event: MouseEvent<HTMLElement>) => {
-      if (mobile && !showOverlay) {
-        event.preventDefault();
-        setShowOverlay(!showOverlay);
-      }
-    },
-    [mobile, showOverlay],
-  );
-
-  return (
-    <a
-      className={classNames(
-        'absolute inset-0 h-full w-full  bg-gray-900 transition-all duration-300',
-        {'opacity-0 hover:opacity-80': !mobile},
-        showOverlay ? 'opacity-80' : 'opacity-0',
-      )}
-      href={url}
-      onClick={handleItemClick}
-      ref={linkRef}
-      target="_blank">
-      <div className="relative h-full w-full p-4">
-        <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto overscroll-contain">
-          <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
-          <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
-        </div>
-        <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
-      </div>
-    </a>
-  );
-});

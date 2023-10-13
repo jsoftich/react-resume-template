@@ -3,15 +3,15 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
 
-import {heroData, SectionId} from '../../data/data';
+import {introData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
 
-const Hero: FC = memo(() => {
-  const {imageSrc, name, description, actions} = heroData;
+const Intro: FC = memo(() => {
+  const {imageSrc, name, description, actions} = introData;
 
   return (
-    <Section noPadding sectionId={SectionId.Hero}>
+    <Section noPadding sectionId={SectionId.Intro}>
       <div className="relative flex h-screen w-full items-center justify-center">
         <Image
           alt={`${name}-image`}
@@ -55,5 +55,5 @@ const Hero: FC = memo(() => {
   );
 });
 
-Hero.displayName = 'Hero';
-export default Hero;
+Intro.displayName = 'Intro';
+export default Intro;

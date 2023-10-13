@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       colors: {
         yellow: '#efc603',
+        myorange: '#ff5733',
+        mygreen: '#32cd32',
       },
       keyframes: {
         typing: {
