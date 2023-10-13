@@ -14,19 +14,18 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import introImage from '../images/Glacier.jpg';
-import portfolioImage from '../images/WhitefishLake.jpg';
 import profilepic from '../images/JMS.jpg';
-
+import portfolioImage from '../images/WhitefishLake.jpg';
 import {
   About,
   ContactSection,
   ContactType,
-  Intro,
   HomepageMeta,
+  Intro,
+  PortfolioItem,
   SkillGroup,
   Social,
   TimelineItem,
-  PortfolioItem,
 } from './dataDef';
 
 /**
@@ -302,7 +301,7 @@ export const experience: TimelineItem[] = [
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Contact Info',
   items: [
     {
       type: ContactType.Email,

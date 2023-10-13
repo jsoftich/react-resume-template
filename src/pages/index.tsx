@@ -6,7 +6,6 @@ import About from '../components/Sections/About';
 import Contact from '../components/Sections/Contact';
 import Footer from '../components/Sections/Footer';
 import Intro from '../components/Sections/Intro';
-import Portfolio from '../components/Sections/Portfolio';
 import Resume from '../components/Sections/Resume';
 import {homePageMeta} from '../data/data';
 
