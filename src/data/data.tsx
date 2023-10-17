@@ -130,7 +130,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Kalispell, MT', Icon: MapIcon},
     {label: 'Age', text: '47', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Italian / Scottish / Slavic', Icon: FlagIcon},
-    {label: 'Interests', text: 'Fly Fishing, Woodworking, Banjos', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Fly Fishing, Woodworking, Sports', Icon: SparklesIcon},
     {label: 'College', text: 'Montana State University', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'National Flood Services - Peak6', Icon: BuildingOffice2Icon},
   ],
