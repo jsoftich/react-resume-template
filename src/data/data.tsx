@@ -73,7 +73,7 @@ export const introData: Intro = {
   ),
   actions: [
     {
-      href: '/assets/JohnSoftichResume.pdf',
+      href: 'http://www.johnsoftich.com/assets/JohnSoftich-Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
