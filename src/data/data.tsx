@@ -203,7 +203,7 @@ export const skills: SkillGroup[] = [
       },      
       {
         name: 'GoLang',
-        level: 4,
+        level: 3,
       },
       {
         name: 'Node.js',
@@ -250,7 +250,7 @@ export const education: TimelineItem[] = [
   {
     date: 'May 2000',
     location: 'Montana State University',
-    title: 'BS Mathematics Minor Computer Science',
+    title: 'BS Mathematics - Minor Computer Science',
     content: <p></p>,
   },
   {
