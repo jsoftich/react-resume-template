@@ -14,7 +14,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import introImage from '../images/Glacier.jpg';
-import profilepic from '../images/JMS.jpg';
+import profilepic from '../images/JohnSoftich.jpg';
 import portfolioImage from '../images/WhitefishLake.jpg';
 import {
   About,
