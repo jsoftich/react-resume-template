@@ -1,4 +1,4 @@
-FROM node:alpine as BUILD_IMAGE
+FROM node:20-alpine as BUILD_IMAGE
 WORKDIR /app
 COPY package.json yarn.lock ./
 # install dependencies
