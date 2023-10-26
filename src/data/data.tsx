@@ -145,11 +145,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 7,
+        level: 7.5,
       },
       {
         name: 'TypeScript',
-        level: 5,
+        level: 6,
       },      
       {
         name: 'ASP.NET Core Blazor',
@@ -160,9 +160,9 @@ export const skills: SkillGroup[] = [
         level: 5,
       },
       {
-        name: 'jQuery',
+        name: 'Angular',
         level: 7,
-      },      
+      },   
     ],
   },
   {
