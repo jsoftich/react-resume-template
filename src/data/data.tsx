@@ -166,6 +166,31 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    name: 'Backend development',
+    skills: [
+      {
+        name: 'C#(.NET/CORE)',
+        level: 9,
+      },
+      {
+        name: 'Java',
+        level: 6.5,
+      },      
+      {
+        name: 'GoLang',
+        level: 3,
+      },
+      {
+        name: 'Node.js',
+        level: 7,
+      },
+      {
+        name: 'Perl',
+        level: 6,
+      },      
+    ],
+  },  
+  {
     name: 'Database development',
     skills: [
       {
@@ -191,31 +216,6 @@ export const skills: SkillGroup[] = [
     ],
   },  
   {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'C#(.NET/CORE)',
-        level: 9,
-      },
-      {
-        name: 'Java',
-        level: 6.5,
-      },      
-      {
-        name: 'GoLang',
-        level: 3,
-      },
-      {
-        name: 'Node.js',
-        level: 7,
-      },
-      {
-        name: 'Perl',
-        level: 6,
-      },      
-    ],
-  },
-  {
     name: 'Scripting',
     skills: [
       {
@@ -240,6 +240,56 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
+  {
+    name: 'Agile',
+    skills: [
+      {
+        name: 'Scrum',
+        level: 10,
+      },
+      {
+        name: 'Kanban',
+        level: 9.5,
+      },      
+      {
+        name: 'Sprint Planning',
+        level: 9.5,
+      },
+      {
+        name: 'Backlog Refinement',
+        level: 9.5,
+      },
+      {
+        name: 'User Stories',
+        level: 8,
+      },      
+    ],
+  },
+  {
+    name: 'Version Control',
+    skills: [
+      {
+        name: 'Team Foundation Server',
+        level: 9,
+      },
+      {
+        name: 'Azure DevOps',
+        level: 7,
+      },      
+      {
+        name: 'Git',
+        level: 8,
+      },
+      {
+        name: 'GitHub',
+        level: 8,
+      },
+      {
+        name: 'BitBucket',
+        level: 8.5,
+      },      
+    ],
+  },    
 ];
 
 
