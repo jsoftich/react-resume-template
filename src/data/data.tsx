@@ -274,11 +274,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Azure DevOps',
-        level: 7,
+        level: 6.5,
       },      
       {
         name: 'Git',
-        level: 8,
+        level: 8.5,
       },
       {
         name: 'GitHub',
@@ -318,7 +318,7 @@ export const experience: TimelineItem[] = [
     title: 'Director of Software Engineering',
     content: (
       <p>
-       Orchestrate end-to-end project management, including software development, rigorous testing, release, and configuration management, across a spectrum of technologies encompassing Microsoft, IBM, and AWS platforms. Develop high-performing development teams by establishing clear expectations, managing objectives, providing coaching, steering career development, and executing targeted recruitment efforts. Function as product owner for all legacy platforms and serve as a pivotal Subject Matter Expert (SME) for the new platform, driving strategic initiatives.
+       Orchestrate end-to-end project management, including software development, rigorous testing, release, and configuration management, across a spectrum of technologies encompassing Microsoft, IBM, and AWS platforms. Develop high-performing development teams by establishing clear expectations, managing objectives, providing coaching, steering career development, and executing targeted recruitment efforts. Function as product owner for all legacy platforms and serve as a pivotal Subject Matter Expert (SME) for the new platform, driving strategic initiatives.      
       </p>
     ),
   },
