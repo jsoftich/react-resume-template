@@ -8,6 +8,7 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+import CalculateDiff from "../components/age-calculator";
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -27,6 +28,14 @@ import {
   Social,
   TimelineItem,
 } from './dataDef';
+
+
+export const myAge = CalculateDiff([
+  +1976,
+  +6,
+  +19,
+]);
+
 
 /**
  * Page meta data
@@ -128,7 +137,7 @@ export const aboutData: About = {
   description: `I am a highly skilled and adaptable professional with a strong technical background in .NET/C#, SQL Server, React/JavaScript, and AWS. Exceptional in agile project and product management methodologies.  I have substantial experience driving successful software development initiatives, leading high-performing engineering teams, delivering cutting-edge solutions, managing product development lifecycle, and aligning technology strategies with business objectives. I have skills in strategic planning, goal setting, process development, budgeting, and creating opportunities for professional development within technology teams. `,
   aboutItems: [
     {label: 'Location', text: 'Kalispell, MT', Icon: MapIcon},
-    {label: 'Age', text: '47', Icon: CalendarIcon},
+    {label: 'Age', text: myAge.years, Icon: CalendarIcon},
     {label: 'Nationality', text: 'Italian / Scottish / Slavic', Icon: FlagIcon},
     {label: 'Interests', text: 'Fly Fishing, Woodworking, Sports', Icon: SparklesIcon},
     {label: 'College', text: 'Montana State University', Icon: AcademicCapIcon},
