@@ -8,7 +8,7 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import CalculateDiff from "../components/age-calculator";
+import CalculateDiff from "./age-calculator";
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
