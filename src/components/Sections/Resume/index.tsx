@@ -27,7 +27,7 @@ const Resume: FC = memo(() => {
           {education.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
-        </ResumeSection>        
+        </ResumeSection>
       </div>
     </Section>
   );

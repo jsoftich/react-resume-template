@@ -28,9 +28,10 @@ const Footer: FC = memo(() => (
       </a>
     </div>
     <div className="flex flex-col items-center gap-y-6">
-      <a className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
+      <a
+        className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
         href="https://github.com/tbakerx/react-resume-template">
-            Template by <span className="italic text-myorange">Tim Baker</span>
+        Template by <span className="italic text-myorange">Tim Baker</span>
       </a>
     </div>
   </div>

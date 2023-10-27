@@ -89,7 +89,6 @@ interface PortfolioActionItem {
   Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
 }
 
-
 /**
  * Resume section
  */
