@@ -8,7 +8,6 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import CalculateDiff from "./age-calculator";
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -17,6 +16,7 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 import introImage from '../images/Glacier.jpg';
 import profilepic from '../images/JohnSoftich.jpg';
 import portfolioImage from '../images/WhitefishLake.jpg';
+import {CalculateDiff} from './age-calculator';
 import {
   About,
   ContactSection,
@@ -30,12 +30,7 @@ import {
 } from './dataDef';
 
 
-export const myAge = CalculateDiff([
-  +1976,
-  +6,
-  +19,
-]);
-
+export const myAge=CalculateDiff([+1976,+6,+19]);
 
 /**
  * Page meta data
