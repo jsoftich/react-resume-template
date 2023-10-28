@@ -16,7 +16,7 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 import introImage from '../images/Glacier.jpg';
 import profilepic from '../images/JohnSoftich.jpg';
 import portfolioImage from '../images/WhitefishLake.jpg';
-import {CalculateDiff} from './age-calculator';
+import {CalculateDiff} from '../util/age-calculator';
 import {
   About,
   ContactSection,
