@@ -152,21 +152,29 @@ export const skills: SkillGroup[] = [
         level: 7.5,
       },
       {
+        name: 'NextJS',
+        level: 7,
+      },
+      {
+        name: 'Vue',
+        level: 6,
+      },   
+      {
+        name: 'Angular',
+        level: 6,
+      },       
+      {
         name: 'TypeScript',
         level: 6,
       },      
       {
-        name: 'ASP.NET Core Blazor',
-        level: 4,
-      },
-      {
         name: 'GraphQL',
         level: 5,
-      },
+      },         
       {
-        name: 'Angular',
-        level: 7,
-      },   
+        name: 'ASP.NET Core Blazor',
+        level: 4,
+      },              
     ],
   },
   {
@@ -177,21 +185,29 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
+        name: 'Node.js',
+        level: 7,
+      },      
+      {
         name: 'Java',
         level: 6.5,
-      },      
+      },   
+      {
+        name: 'Express.js',
+        level: 6,
+      },           
       {
         name: 'GoLang',
         level: 3,
       },
       {
-        name: 'Node.js',
-        level: 7,
-      },
+        name: 'Rust',
+        level: 2,
+      },     
       {
-        name: 'Perl',
-        level: 6,
-      },      
+        name: 'Ruby',
+        level: 3,
+      },               
     ],
   },  
   {
@@ -224,24 +240,24 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'PowerShell',
-        level: 8.5,
+        level: 7.5,
       },
+      {
+        name: 'PHP',
+        level: 8,
+      },      
       {
         name: 'Python',
         level: 5,
       },
       {
-        name: 'Bash',
+        name: 'Bash/C Shell',
         level: 7.5,
       },
       {
-        name: 'C shell',
-        level: 5,
+        name: 'Perl',
+        level: 6,
       },      
-      {
-        name: 'PHP',
-        level: 8,
-      },
     ],
   },
   {
@@ -277,16 +293,16 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
+        name: 'GitHub',
+        level: 8,
+      },      
+      {
         name: 'Azure DevOps',
         level: 6.5,
       },      
       {
         name: 'Git',
         level: 8.5,
-      },
-      {
-        name: 'GitHub',
-        level: 8,
       },
       {
         name: 'BitBucket',
