@@ -298,7 +298,7 @@ export const skills: SkillGroup[] = [
       },      
       {
         name: 'Azure DevOps',
-        level: 6.5,
+        level: 3.5,
       },      
       {
         name: 'Git',
