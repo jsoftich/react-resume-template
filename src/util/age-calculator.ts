@@ -3,8 +3,10 @@ export function CalculateDiff(myDate: number[]) {
   const monthNow = new Date().getMonth() + 1;
   const dayNow = +new Date().getDate();
 
-  const daysInMonth = (x: number, y: number): number => { return new Date(x, y, 0).getDate();}
-  let CurrentDaysInMonth = daysInMonth(yearNow,monthNow);
+  const daysInMonth = (x: number, y: number): number => {
+    return new Date(x, y, 0).getDate();
+  };
+  const CurrentDaysInMonth = daysInMonth(yearNow, monthNow);
 
   let yearsDiff = yearNow - myDate[0];
   let monthsDiff = monthNow - myDate[1];
