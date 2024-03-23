@@ -1,4 +1,4 @@
-export function CalculateDiff(myDate:number[]) {
+export function CalculateDiff(myDate: number[]) {
   const yearNow = +new Date().getFullYear();
   const monthNow = new Date().getMonth() + 1;
   const dayNow = +new Date().getDate();
@@ -9,8 +9,7 @@ export function CalculateDiff(myDate:number[]) {
 
   if (daysDiff < 0) {
     monthsDiff -= 1;
-    daysDiff =
-      monthNow !== 4 ? 30 - Math.abs(daysDiff) : 31 - Math.abs(daysDiff);
+    daysDiff = monthNow !== 4 ? 30 - Math.abs(daysDiff) : 31 - Math.abs(daysDiff);
   }
   if (monthsDiff < 0) {
     yearsDiff -= 1;
@@ -24,4 +23,4 @@ export function CalculateDiff(myDate:number[]) {
   };
 
   return result;
-};
+}
