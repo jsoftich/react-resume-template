@@ -29,15 +29,14 @@ import {
   TimelineItem,
 } from './dataDef';
 
-
-export const myAge=CalculateDiff([+1976,+6,+19]);
+export const myAge = CalculateDiff([+1976, +6, +19]);
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
   title: 'John Softich resume',
-  description: "My React resume",
+  description: 'My React resume',
 };
 
 /**
@@ -66,12 +65,13 @@ export const introData: Intro = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Montana based <strong className="text-stone-100">Software Engineering leader</strong>, currently working
-        at <strong className="text-stone-100">National Flood Services</strong> leading all aspects of software development of a modern policy and claim systems for NFIP Flood Insurance.
+        at <strong className="text-stone-100">QuieTrack</strong> leading all aspects of software development of a modern
+        Insurance tracking and compliance platfrom.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me <strong className="text-stone-100">Fly Fishing</strong>,
-        creating man glitter in my <strong className="text-stone-100">garage</strong>, or travelling with my wife to college football and all the {' '}
-        <strong className="text-stone-100">MLB stadiums</strong>.
+        In my free time time, you can catch me <strong className="text-stone-100">Fly Fishing</strong>, creating man
+        glitter in my <strong className="text-stone-100">garage</strong>, or travelling with my wife to college football
+        and all the <strong className="text-stone-100">MLB stadiums</strong>.
       </p>
     </>
   ),
@@ -100,11 +100,12 @@ export const portfolioData: PortfolioItem = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Montana based <strong className="text-stone-100">Software Engineering leader</strong>, currently working
-        at <strong className="text-stone-100">National Flood Services</strong> leading all aspects of software development of a modern policy and claim systems for NFIP Flood Insurance.
+        at <strong className="text-stone-100">QuieTrack</strong> leading all aspects of software development of a modern
+        of a modern Insurance tracking and compliance platfrom.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me <strong className="text-stone-100">Fly Fishing</strong>, 
-        creating man glitter in my <strong className="text-stone-100">garage</strong>, or travelling for college football and to all {' '}
+        In my free time time, you can catch me <strong className="text-stone-100">Fly Fishing</strong>, creating man
+        glitter in my <strong className="text-stone-100">garage</strong>, or travelling for college football and to all{' '}
         <strong className="text-stone-100">MLB stadiums</strong>.
       </p>
     </>
@@ -136,7 +137,7 @@ export const aboutData: About = {
     {label: 'Nationality', text: 'Italian / Scottish / Slavic', Icon: FlagIcon},
     {label: 'Interests', text: 'Fly Fishing, Woodworking, Sports', Icon: SparklesIcon},
     {label: 'College', text: 'Montana State University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'National Flood Services - Peak6', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'QuieTrack - Heffernan Insurance', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -158,23 +159,23 @@ export const skills: SkillGroup[] = [
       {
         name: 'Vue',
         level: 6,
-      },   
+      },
       {
         name: 'Angular',
         level: 6,
-      },       
+      },
       {
         name: 'TypeScript',
         level: 6,
-      },      
+      },
       {
         name: 'GraphQL',
         level: 5,
-      },         
+      },
       {
         name: 'ASP.NET Core Blazor',
         level: 4,
-      },              
+      },
     ],
   },
   {
@@ -187,15 +188,15 @@ export const skills: SkillGroup[] = [
       {
         name: 'Node.js',
         level: 7,
-      },      
+      },
       {
         name: 'Java',
         level: 6.5,
-      },   
+      },
       {
         name: 'Express.js',
         level: 6,
-      },           
+      },
       {
         name: 'GoLang',
         level: 3,
@@ -203,13 +204,13 @@ export const skills: SkillGroup[] = [
       {
         name: 'Rust',
         level: 2,
-      },     
+      },
       {
         name: 'Ruby',
         level: 3,
-      },               
+      },
     ],
-  },  
+  },
   {
     name: 'Database development',
     skills: [
@@ -228,13 +229,13 @@ export const skills: SkillGroup[] = [
       {
         name: 'Oracle',
         level: 6,
-      },     
+      },
       {
         name: 'DB2 for i',
         level: 8,
-      },           
+      },
     ],
-  },  
+  },
   {
     name: 'Scripting',
     skills: [
@@ -245,7 +246,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'PHP',
         level: 8,
-      },      
+      },
       {
         name: 'Python',
         level: 5,
@@ -257,7 +258,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Perl',
         level: 6,
-      },      
+      },
     ],
   },
   {
@@ -270,7 +271,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Kanban',
         level: 9.5,
-      },      
+      },
       {
         name: 'Sprint Planning',
         level: 9.5,
@@ -282,7 +283,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'User Stories',
         level: 8,
-      },      
+      },
     ],
   },
   {
@@ -295,11 +296,11 @@ export const skills: SkillGroup[] = [
       {
         name: 'GitHub',
         level: 8,
-      },      
+      },
       {
         name: 'Azure DevOps',
         level: 3.5,
-      },      
+      },
       {
         name: 'Git',
         level: 8.5,
@@ -307,11 +308,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'BitBucket',
         level: 8.5,
-      },      
+      },
     ],
-  },    
+  },
 ];
-
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
@@ -333,12 +333,30 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'August 2011 - Present',
+    date: 'April 2024 - Present',
+    location: 'QuieTrack - Heffernan Insurance',
+    title: 'Vice President of Software Engineering',
+    content: (
+      <p>
+        Lead in the design, development, and implementation of the software solutions, guiding a team of talented
+        developers and collaborating with cross-functional teams to meet our clients' needs. Created the strategic
+        direction and tehcnology roadmap for software engineering with focus on keeping up to date on emerging
+        technologies and industry trends to ensure the product offerings remain innovative and competitive.
+      </p>
+    ),
+  },
+  {
+    date: 'August 2011 - January 2024',
     location: 'National Flood Services - Peak6',
     title: 'Director of Software Engineering',
     content: (
       <p>
-       Orchestrate end-to-end project management, including software development, rigorous testing, release, and configuration management, across a spectrum of technologies encompassing Microsoft, IBM, and AWS platforms. Develop high-performing development teams by establishing clear expectations, managing objectives, providing coaching, steering career development, and executing targeted recruitment efforts. Function as product owner for all legacy platforms and serve as a pivotal Subject Matter Expert (SME) for the new platform, driving strategic initiatives.      
+        Orchestrate end-to-end project management, including software development, rigorous testing, release, and
+        configuration management, across a spectrum of technologies encompassing Microsoft, IBM, and AWS platforms.
+        Develop high-performing development teams by establishing clear expectations, managing objectives, providing
+        coaching, steering career development, and executing targeted recruitment efforts. Function as product owner for
+        all legacy platforms and serve as a pivotal Subject Matter Expert (SME) for the new platform, driving strategic
+        initiatives.
       </p>
     ),
   },
@@ -348,7 +366,12 @@ export const experience: TimelineItem[] = [
     title: 'Director of IT',
     content: (
       <p>
-        Headed information technology encompassing software development, IT operations/networking, IT security, data processing/warehouse, and helpdesk/sustainment services. Supervised a proficient team of twelve professionals while managing a substantial $3M budget. Led software and system architecture, instilling rigorous development processes and standards across the organization. Delivered a custom site on schedule for the company's largest client without disrupting ongoing operations. Established a new internal data center and managed multiple colocation facility migrations and consolidation efforts.
+        Headed information technology encompassing software development, IT operations/networking, IT security, data
+        processing/warehouse, and helpdesk/sustainment services. Supervised a proficient team of twelve professionals
+        while managing a substantial $3M budget. Led software and system architecture, instilling rigorous development
+        processes and standards across the organization. Delivered a custom site on schedule for the company's largest
+        client without disrupting ongoing operations. Established a new internal data center and managed multiple
+        colocation facility migrations and consolidation efforts.
       </p>
     ),
   },
@@ -358,12 +381,13 @@ export const experience: TimelineItem[] = [
     title: 'IT Manager/Senior Web Developer',
     content: (
       <p>
-        I oversaw the Information Technology and Customer Service operations for a $100 million Information Services Company. My responsibilities included managing various aspects such as software development, quality assurance (QA), infrastructure, security, project management, helpdesk, and customer service.
+        I oversaw the Information Technology and Customer Service operations for a $100 million Information Services
+        Company. My responsibilities included managing various aspects such as software development, quality assurance
+        (QA), infrastructure, security, project management, helpdesk, and customer service.
       </p>
     ),
-  },  
+  },
 ];
-
 
 /**
  * Contact section
