@@ -340,7 +340,7 @@ export const experience: TimelineItem[] = [
       <p>
         Lead in the design, development, and implementation of the software solutions, guiding a team of talented
         developers and collaborating with cross-functional teams to meet our clients' needs. Created the strategic
-        direction and tehcnology roadmap for software engineering with focus on keeping up to date on emerging
+        direction and technology roadmap for software engineering with focus on keeping up to date on emerging
         technologies and industry trends to ensure the product offerings remain innovative and competitive.
       </p>
     ),
