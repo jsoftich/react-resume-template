@@ -425,7 +425,7 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/jsoftich'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/1325267/ninghad'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/1325267/jsoftich'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/jsoftich/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/jsoftich/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/johnsoftich'},
