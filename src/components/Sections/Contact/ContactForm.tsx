@@ -33,7 +33,7 @@ const ContactForm: FC = memo(() => {
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       try {
-        const response = await fetch('https://wwww.johnsoftich.com/sendemail.php', {
+        const response = await fetch('/api/sendmail', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
