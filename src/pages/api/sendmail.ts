@@ -18,7 +18,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const mailOptions = {
       from: email,
       to: 'jsoftich@gmail.com', // Replace with your email address
-      subject: 'New Contact Form Submission',
+      subject: 'Resume.JohnSoftich.me Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
 
