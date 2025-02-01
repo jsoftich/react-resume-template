@@ -82,7 +82,9 @@ const ContactForm: FC = memo(() => {
               required
               rows={4}
             />
-            <button className="your-button-class" type="submit" >
+            <button aria-label="Submit contact form"
+              className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+              type="submit" >
               Send Message
             </button>
           </form>
