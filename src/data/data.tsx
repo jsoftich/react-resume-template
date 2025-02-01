@@ -398,11 +398,6 @@ export const contact: ContactSection = {
   description: 'Contact Info',
   items: [
     {
-      type: ContactType.Email,
-      text: 'contact@johnsoftich.com',
-      href: 'mailto:contact@johnsoftich.com',
-    },
-    {
       type: ContactType.Location,
       text: 'Kalispell, MT',
       href: 'https://www.google.com/maps/place/Kalispell,+MT+59901/@48.2247291,-114.3173031,12.75z/data=!4m6!3m5!1s0x536650959ceac247:0xaf1fbdda1d5abb62!8m2!3d48.1919889!4d-114.316813!16zL20vMHgxdnQ?entry=ttu',
