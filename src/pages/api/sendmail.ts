@@ -16,9 +16,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // Set up email data
     const mailOptions = {
-      from: email,
+      from: `"${name}" <${process.env.EMAIL_USER}>`,
       to: 'jsoftich@gmail.com', // Replace with your email address
-      subject: 'Resume.JohnSoftich.me Contact Form Submission',
+      subject: `Resume.JohnSoftich.me Contact Form Submission from ${email}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
 
