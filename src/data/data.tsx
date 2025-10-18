@@ -333,7 +333,20 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'April 2024 - Present',
+    date: 'August 2025 - Present',
+    location: 'QuieTrack - Heffernan Insurance',
+    title: 'Chief Technology Officer',
+    content: (
+      <p>
+        Hands-on CTO leading a company-wide modernization of our legacy Comet and C#/.NET platforms while weaving AI 
+        into every layer of the stack and workflow. I own the tech roadmap end to end: migrating to .NET 8, modularizing 
+        with clean architecture, moving to AWS with containerization (EKS/ECS), and establishing CI/CD, IaC, and 
+        observability. I still ship where it matters—spikes, critical paths, and PR reviews—and set the bar for engineering quality and security.
+      </p>
+    ),
+  },
+  {
+    date: 'April 2024 - August 2025',
     location: 'QuieTrack - Heffernan Insurance',
     title: 'Vice President of Software Engineering',
     content: (
