@@ -362,7 +362,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'August 2011 - January 2024',
     location: 'National Flood Services - Peak6',
-    title: 'Director of Software Engineering',
+    title: 'AVP/Director of Software Engineering',
     content: (
       <p>
         Orchestrate end-to-end project management, including software development, rigorous testing, release, and
