@@ -338,10 +338,11 @@ export const experience: TimelineItem[] = [
     title: 'Chief Technology Officer',
     content: (
       <p>
-        Hands-on CTO leading a company-wide modernization of our legacy Comet and C#/.NET platforms while weaving AI 
-        into every layer of the stack and workflow. I own the tech roadmap end to end: migrating to .NET 8, modularizing 
-        with clean architecture, moving to AWS with containerization (EKS/ECS), and establishing CI/CD, IaC, and 
-        observability. I still ship where it matters—spikes, critical paths, and PR reviews—and set the bar for engineering quality and security.
+        Hands-on CTO leading a company-wide modernization of our legacy Comet and C#/.NET platforms while weaving AI
+        into every layer of the stack and workflow. I own the tech roadmap end to end: migrating to .NET 8, modularizing
+        with clean architecture, moving to AWS with containerization (EKS/ECS), and establishing CI/CD, IaC, and
+        observability. I still ship where it matters—spikes, critical paths, and PR reviews—and set the bar for
+        engineering quality and security.
       </p>
     ),
   },

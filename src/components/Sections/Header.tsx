@@ -33,6 +33,7 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
       '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hover:text-orange-500 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-orange-500');
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
+
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
@@ -63,6 +64,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
       'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500';
     const activeClass = classNames(baseClass, 'bg-neutral-900 text-white font-bold');
     const inactiveClass = classNames(baseClass, 'text-neutral-200 font-medium');
+
     return (
       <>
         <button
@@ -72,6 +74,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
           <Bars3BottomRightIcon className="h-8 w-8 text-white" />
           <span className="sr-only">Open sidebar</span>
         </button>
+
         <Transition.Root as={Fragment} show={isOpen}>
           <Dialog as="div" className="fixed inset-0 z-40 flex sm:hidden" onClose={toggleOpen}>
             <Transition.Child
@@ -82,8 +85,9 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
               leave="transition-opacity ease-linear duration-300"
               leaveFrom="opacity-100"
               leaveTo="opacity-0">
-              <Dialog.Overlay className="fixed inset-0 bg-stone-900 bg-opacity-75" />
+              <div aria-hidden="true" className="fixed inset-0 bg-stone-900/75" />
             </Transition.Child>
+
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
@@ -122,11 +126,7 @@ const NavItem: FC<{
   onClick?: () => void;
 }> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
   return (
-    <Link
-      className={classNames(current ? activeClass : inactiveClass)}
-      href={`/#${section}`}
-      key={section}
-      onClick={onClick}>
+    <Link className={classNames(current ? activeClass : inactiveClass)} href={`/#${section}`} key={section} onClick={onClick}>
       {section}
     </Link>
   );

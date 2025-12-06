@@ -1,3 +1,4 @@
+import type {JSX} from 'react';
 import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
